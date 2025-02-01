@@ -18,9 +18,7 @@ Add `@eslym/postcss-merge-queries` to your PostCSS configuration.
 ```js
 // postcss.config.js
 module.exports = {
-  plugins: [
-    require('@eslym/postcss-merge-queries')(),
-  ],
+  plugins: [require("@eslym/postcss-merge-queries")()],
 };
 ```
 
@@ -37,6 +35,7 @@ module.exports = {
     }),
   ],
 };
+```
 
 ## Example
 
@@ -45,10 +44,14 @@ Input CSS:
 ```css
 /* Before */
 @media (min-width: 768px) {
-  .foo { color: red; }
+  .foo {
+    color: red;
+  }
 }
 @media (min-width: 768px) {
-  .bar { color: blue; }
+  .bar {
+    color: blue;
+  }
 }
 ```
 
@@ -57,8 +60,12 @@ Output CSS:
 ```css
 /* After */
 @media (min-width: 768px) {
-  .foo { color: red; }
-  .bar { color: blue; }
+  .foo {
+    color: red;
+  }
+  .bar {
+    color: blue;
+  }
 }
 ```
 
