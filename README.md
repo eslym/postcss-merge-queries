@@ -68,24 +68,3 @@ Output CSS:
   }
 }
 ```
-
-## API
-
-### `mergeQueries(options)`
-
-#### options
-
-Type: `object` (optional)
-
-Options to customize the behavior of the plugin.
-
-```typescript
-// dist/index.d.ts
-interface Options {
-  // ...existing code...
-}
-
-declare function mergeQueries(options?: Options): any;
-
-export = mergeQueries;
-```
