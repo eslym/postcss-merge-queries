@@ -1,6 +1,6 @@
 {
   "name": "@eslym/postcss-merge-queries",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "module": "dist/index.mjs",
   "type": "module",
   "exports": {
@@ -19,6 +19,9 @@
     "email": "engshun.lim@gmail.com",
     "url": "https://0nepeop1e.com"
   },
+  "files": [
+      "./dist"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.1.0",
